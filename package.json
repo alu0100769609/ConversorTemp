@@ -1,0 +1,22 @@
+{
+  "name": "ConvTemp",
+  "version": "1.0.0",
+  "description": "ConvTemp",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "chai": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "google-chrome tests/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alu0100769609/Todo/tree/gh-pages/ConvTemp"
+  },
+  "author": "Adexe Sabina Perez",
+  "license": "ISC"
+}
