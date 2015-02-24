@@ -1,10 +1,10 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '--global', 'gulp' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'karma' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
 4 verbose node symlink /usr/bin/node
-5 verbose cache add [ 'gulp', null ]
-6 verbose cache add name=undefined spec="gulp" args=["gulp",null]
+5 verbose cache add [ 'karma', null ]
+6 verbose cache add name=undefined spec="karma" args=["karma",null]
 7 verbose parsed url { protocol: null,
 7 verbose parsed url   slashes: null,
 7 verbose parsed url   auth: null,
@@ -14,223 +14,419 @@
 7 verbose parsed url   hash: null,
 7 verbose parsed url   search: null,
 7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: 'gulp',
-7 verbose parsed url   path: 'gulp',
-7 verbose parsed url   href: 'gulp' }
-8 silly lockFile 9750c68d-gulp gulp
-9 verbose lock gulp /home/adexe/.npm/9750c68d-gulp.lock
-10 silly lockFile 9750c68d-gulp gulp
-11 silly lockFile 9750c68d-gulp gulp
-12 verbose addNamed [ 'gulp', '' ]
+7 verbose parsed url   pathname: 'karma',
+7 verbose parsed url   path: 'karma',
+7 verbose parsed url   href: 'karma' }
+8 silly lockFile 512423cb-karma karma
+9 verbose lock karma /home/adexe/.npm/512423cb-karma.lock
+10 silly lockFile 512423cb-karma karma
+11 silly lockFile 512423cb-karma karma
+12 verbose addNamed [ 'karma', '' ]
 13 verbose addNamed [ null, '*' ]
-14 silly lockFile 72f4391e-gulp gulp@
-15 verbose lock gulp@ /home/adexe/.npm/72f4391e-gulp.lock
-16 silly addNameRange { name: 'gulp', range: '*', hasData: false }
-17 verbose request where is /gulp
+14 silly lockFile cd7961bb-karma karma@
+15 verbose lock karma@ /home/adexe/.npm/cd7961bb-karma.lock
+16 silly addNameRange { name: 'karma', range: '*', hasData: false }
+17 verbose request where is /karma
 18 verbose request registry https://registry.npmjs.org/
-19 verbose request id fcdf54809bfb9b47
-20 verbose url raw /gulp
-21 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
-22 verbose url resolved https://registry.npmjs.org/gulp
-23 verbose request where is https://registry.npmjs.org/gulp
-24 info trying registry request attempt 1 at 19:19:50
-25 http GET https://registry.npmjs.org/gulp
-26 http 200 https://registry.npmjs.org/gulp
-27 silly registry.get cb [ 200,
-27 silly registry.get   { date: 'Tue, 24 Feb 2015 19:19:50 GMT',
-27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-27 silly registry.get     etag: '"5QJIGVI670A6YLM9ARP7ZUANT"',
-27 silly registry.get     'content-type': 'application/json',
-27 silly registry.get     'cache-control': 'max-age=60',
-27 silly registry.get     'content-length': '100136',
-27 silly registry.get     'accept-ranges': 'bytes',
-27 silly registry.get     via: '1.1 varnish',
-27 silly registry.get     age: '45',
-27 silly registry.get     'x-served-by': 'cache-lcy1129-LCY',
-27 silly registry.get     'x-cache': 'HIT',
-27 silly registry.get     'x-cache-hits': '1',
-27 silly registry.get     'x-timer': 'S1424805590.923544,VS0,VE0',
-27 silly registry.get     vary: 'Accept',
-27 silly registry.get     'keep-alive': 'timeout=10, max=50',
-27 silly registry.get     connection: 'Keep-Alive' } ]
-28 silly addNameRange number 2 { name: 'gulp', range: '*', hasData: true }
-29 silly addNameRange versions [ 'gulp',
-29 silly addNameRange   [ '0.0.1',
-29 silly addNameRange     '0.0.2',
-29 silly addNameRange     '0.0.3',
-29 silly addNameRange     '0.0.4',
-29 silly addNameRange     '0.0.5',
-29 silly addNameRange     '0.0.7',
-29 silly addNameRange     '0.0.8',
-29 silly addNameRange     '0.0.9',
-29 silly addNameRange     '0.1.0',
-29 silly addNameRange     '0.2.0',
-29 silly addNameRange     '1.0.0',
-29 silly addNameRange     '1.1.0',
-29 silly addNameRange     '1.2.0',
-29 silly addNameRange     '1.2.1',
-29 silly addNameRange     '2.0.0',
-29 silly addNameRange     '2.0.1',
-29 silly addNameRange     '2.1.0',
-29 silly addNameRange     '2.2.0',
-29 silly addNameRange     '2.3.0',
-29 silly addNameRange     '2.4.0',
-29 silly addNameRange     '2.4.1',
-29 silly addNameRange     '2.6.0',
-29 silly addNameRange     '2.6.1',
-29 silly addNameRange     '2.7.0',
-29 silly addNameRange     '3.0.0',
-29 silly addNameRange     '3.1.1',
-29 silly addNameRange     '3.1.2',
-29 silly addNameRange     '3.1.3',
-29 silly addNameRange     '3.1.4',
-29 silly addNameRange     '3.2.0',
-29 silly addNameRange     '3.2.1',
-29 silly addNameRange     '3.2.2',
-29 silly addNameRange     '3.2.3',
-29 silly addNameRange     '3.2.4',
-29 silly addNameRange     '3.2.5',
-29 silly addNameRange     '3.3.0',
-29 silly addNameRange     '3.3.1',
-29 silly addNameRange     '3.3.2',
-29 silly addNameRange     '3.3.4',
-29 silly addNameRange     '3.4.0',
-29 silly addNameRange     '3.5.0',
-29 silly addNameRange     '3.5.1',
-29 silly addNameRange     '3.5.2',
-29 silly addNameRange     '3.5.5',
-29 silly addNameRange     '3.5.6',
-29 silly addNameRange     '3.6.0',
-29 silly addNameRange     '3.6.1',
-29 silly addNameRange     '3.6.2',
-29 silly addNameRange     '3.7.0',
-29 silly addNameRange     '3.8.0',
-29 silly addNameRange     '3.8.1',
-29 silly addNameRange     '3.8.2',
-29 silly addNameRange     '3.8.3',
-29 silly addNameRange     '3.8.4',
-29 silly addNameRange     '3.8.5',
-29 silly addNameRange     '3.8.6',
-29 silly addNameRange     '3.8.7',
-29 silly addNameRange     '3.8.8',
-29 silly addNameRange     '3.8.9',
-29 silly addNameRange     '3.8.10',
-29 silly addNameRange     '3.8.11' ] ]
-30 verbose addNamed [ 'gulp', '3.8.11' ]
-31 verbose addNamed [ '3.8.11', '3.8.11' ]
-32 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
-33 verbose lock gulp@3.8.11 /home/adexe/.npm/3d31ec08-gulp-3-8-11.lock
-34 silly lockFile 2528ddbe-y-npmjs-org-gulp-gulp-3-8-11-tgz https://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz
-35 verbose lock https://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz /home/adexe/.npm/2528ddbe-y-npmjs-org-gulp-gulp-3-8-11-tgz.lock
-36 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz',
-36 verbose addRemoteTarball   'd557e0a7283eb4136491969b0497767972f1d28a' ]
-37 info retry fetch attempt 1 at 19:19:51
-38 verbose fetch to= /tmp/npm-6436-G7V-rFFb/registry.npmjs.org/gulp/-/gulp-3.8.11.tgz
-39 http GET https://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz
-40 http 200 https://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz
-41 silly lockFile 2528ddbe-y-npmjs-org-gulp-gulp-3-8-11-tgz https://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz
-42 silly lockFile 2528ddbe-y-npmjs-org-gulp-gulp-3-8-11-tgz https://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz
-43 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
-44 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
-45 silly lockFile 72f4391e-gulp gulp@
-46 silly lockFile 72f4391e-gulp gulp@
-47 silly resolved [ { name: 'gulp',
-47 silly resolved     description: 'The streaming build system',
-47 silly resolved     version: '3.8.11',
-47 silly resolved     homepage: 'http://gulpjs.com',
-47 silly resolved     repository: { type: 'git', url: 'https://github.com/gulpjs/gulp' },
-47 silly resolved     author:
-47 silly resolved      { name: 'Fractal',
-47 silly resolved        email: 'contact@wearefractal.com',
-47 silly resolved        url: 'http://wearefractal.com/' },
-47 silly resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
-47 silly resolved     files: [ 'index.js', 'lib', 'bin', 'completion' ],
-47 silly resolved     bin: { gulp: './bin/gulp.js' },
-47 silly resolved     man: [ 'gulp.1' ],
-47 silly resolved     dependencies:
-47 silly resolved      { archy: '^1.0.0',
-47 silly resolved        chalk: '^0.5.0',
-47 silly resolved        deprecated: '^0.0.1',
-47 silly resolved        'gulp-util': '^3.0.0',
-47 silly resolved        interpret: '^0.3.2',
-47 silly resolved        liftoff: '^2.0.1',
-47 silly resolved        minimist: '^1.1.0',
-47 silly resolved        orchestrator: '^0.3.0',
-47 silly resolved        'pretty-hrtime': '^0.2.0',
-47 silly resolved        semver: '^4.1.0',
-47 silly resolved        tildify: '^1.0.0',
-47 silly resolved        v8flags: '^2.0.2',
-47 silly resolved        'vinyl-fs': '^0.3.0' },
-47 silly resolved     devDependencies:
-47 silly resolved      { coveralls: '^2.7.0',
-47 silly resolved        'graceful-fs': '^3.0.0',
-47 silly resolved        istanbul: '^0.3.0',
-47 silly resolved        jshint: '^2.5.0',
-47 silly resolved        'jshint-stylish': '^1.0.0',
-47 silly resolved        'marked-man': '^0.1.3',
-47 silly resolved        mkdirp: '^0.5.0',
-47 silly resolved        mocha: '^2.0.1',
-47 silly resolved        'mocha-lcov-reporter': '^0.0.1',
-47 silly resolved        q: '^1.0.0',
-47 silly resolved        rimraf: '^2.2.5',
-47 silly resolved        should: '^4.0.0' },
-47 silly resolved     scripts:
-47 silly resolved      { prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
-47 silly resolved        lint: 'jshint lib bin index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules',
-47 silly resolved        test: 'npm run-script lint && mocha --reporter spec',
-47 silly resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
-47 silly resolved     engineStrict: true,
-47 silly resolved     engines: { node: '>= 0.9' },
-47 silly resolved     licenses: [ [Object] ],
-47 silly resolved     gitHead: '84df40b0faabc2b61d576154fd1145e2146377ca',
-47 silly resolved     bugs: { url: 'https://github.com/gulpjs/gulp/issues' },
-47 silly resolved     _id: 'gulp@3.8.11',
-47 silly resolved     _shasum: 'd557e0a7283eb4136491969b0497767972f1d28a',
-47 silly resolved     _from: 'gulp@',
-47 silly resolved     _npmVersion: '2.5.1',
-47 silly resolved     _nodeVersion: '0.12.0',
-47 silly resolved     _npmUser: { name: 'phated', email: 'blaine@iceddev.com' },
-47 silly resolved     maintainers: [ [Object], [Object] ],
-47 silly resolved     dist:
-47 silly resolved      { shasum: 'd557e0a7283eb4136491969b0497767972f1d28a',
-47 silly resolved        tarball: 'http://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz' },
-47 silly resolved     directories: {},
-47 silly resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz' } ]
-48 info install gulp@3.8.11 into /usr/lib
-49 info installOne gulp@3.8.11
-50 verbose lib/node_modules/gulp unbuild
-51 verbose tar unpack /home/adexe/.npm/gulp/3.8.11/package.tgz
-52 silly lockFile df399f84-tar-usr-lib-node-modules-gulp tar:///usr/lib/node_modules/gulp
-53 verbose lock tar:///usr/lib/node_modules/gulp /home/adexe/.npm/df399f84-tar-usr-lib-node-modules-gulp.lock
-54 silly lockFile 84e7249d-dexe-npm-gulp-3-8-11-package-tgz tar:///home/adexe/.npm/gulp/3.8.11/package.tgz
-55 verbose lock tar:///home/adexe/.npm/gulp/3.8.11/package.tgz /home/adexe/.npm/84e7249d-dexe-npm-gulp-3-8-11-package-tgz.lock
-56 silly gunzTarPerm modes [ '775', '664' ]
-57 error Error: EACCES, mkdir '/usr/lib/node_modules/gulp'
-57 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/gulp']
-57 error   errno: 3,
-57 error   code: 'EACCES',
-57 error   path: '/usr/lib/node_modules/gulp',
-57 error   fstream_type: 'Directory',
-57 error   fstream_path: '/usr/lib/node_modules/gulp',
-57 error   fstream_class: 'DirWriter',
-57 error   fstream_stack:
-57 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
-57 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
-57 error      'Object.oncomplete (fs.js:107:15)' ] }
-58 error Please try running this command again as root/Administrator.
-59 error System Linux 3.13.0-43-generic
-60 error command "/usr/bin/node" "/usr/bin/npm" "install" "--global" "gulp"
-61 error cwd /home/adexe/Escritorio/Procesadores de Lenguajes/Pagina Web/ConvTemp
-62 error node -v v0.10.33
-63 error npm -v 1.4.28
-64 error path /usr/lib/node_modules/gulp
-65 error fstream_path /usr/lib/node_modules/gulp
-66 error fstream_type Directory
-67 error fstream_class DirWriter
-68 error code EACCES
-69 error errno 3
-70 error stack Error: EACCES, mkdir '/usr/lib/node_modules/gulp'
-71 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
-71 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
-71 error fstream_stack Object.oncomplete (fs.js:107:15)
-72 verbose exit [ 3, true ]
+19 verbose request id 3152badf37789e13
+20 verbose url raw /karma
+21 verbose url resolving [ 'https://registry.npmjs.org/', './karma' ]
+22 verbose url resolved https://registry.npmjs.org/karma
+23 verbose request where is https://registry.npmjs.org/karma
+24 info trying registry request attempt 1 at 20:28:56
+25 verbose etag "9QW8BJPTSKQURVDW58QJCLK4O"
+26 http GET https://registry.npmjs.org/karma
+27 http 200 https://registry.npmjs.org/karma
+28 silly registry.get cb [ 200,
+28 silly registry.get   { date: 'Tue, 24 Feb 2015 20:28:56 GMT',
+28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly registry.get     etag: '"ACYNRSXUWPU9QZ45U2EOIAVLF"',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     'content-length': '688410',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '10',
+28 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '1',
+28 silly registry.get     'x-timer': 'S1424809736.877865,VS0,VE3',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 silly addNameRange number 2 { name: 'karma', range: '*', hasData: true }
+30 silly addNameRange versions [ 'karma',
+30 silly addNameRange   [ '0.8.0',
+30 silly addNameRange     '0.9.0-dart',
+30 silly addNameRange     '0.8.1',
+30 silly addNameRange     '0.8.2',
+30 silly addNameRange     '0.8.3',
+30 silly addNameRange     '0.9.0',
+30 silly addNameRange     '0.8.4',
+30 silly addNameRange     '0.9.1',
+30 silly addNameRange     '0.8.5',
+30 silly addNameRange     '0.9.2',
+30 silly addNameRange     '0.9.2-dart',
+30 silly addNameRange     '0.9.3',
+30 silly addNameRange     '0.8.6',
+30 silly addNameRange     '0.9.4',
+30 silly addNameRange     '0.8.7',
+30 silly addNameRange     '0.9.5',
+30 silly addNameRange     '0.9.6',
+30 silly addNameRange     '0.8.8',
+30 silly addNameRange     '0.9.7',
+30 silly addNameRange     '0.9.8',
+30 silly addNameRange     '0.10.0',
+30 silly addNameRange     '0.10.1',
+30 silly addNameRange     '0.10.2',
+30 silly addNameRange     '0.11.0',
+30 silly addNameRange     '0.11.1',
+30 silly addNameRange     '0.10.3',
+30 silly addNameRange     '0.10.4',
+30 silly addNameRange     '0.11.2',
+30 silly addNameRange     '0.11.3',
+30 silly addNameRange     '0.10.5',
+30 silly addNameRange     '0.11.4',
+30 silly addNameRange     '0.11.5',
+30 silly addNameRange     '0.10.6',
+30 silly addNameRange     '0.11.6',
+30 silly addNameRange     '0.10.7',
+30 silly addNameRange     '0.11.7',
+30 silly addNameRange     '0.11.8',
+30 silly addNameRange     '0.11.9',
+30 silly addNameRange     '0.10.8',
+30 silly addNameRange     '0.11.10',
+30 silly addNameRange     '0.11.11',
+30 silly addNameRange     '0.11.12',
+30 silly addNameRange     '0.11.11-dev',
+30 silly addNameRange     '0.10.9',
+30 silly addNameRange     '0.11.12-dev',
+30 silly addNameRange     '0.11.12-dev2',
+30 silly addNameRange     '0.11.13',
+30 silly addNameRange     '0.11.14',
+30 silly addNameRange     '0.12.0',
+30 silly addNameRange     '0.10.10',
+30 silly addNameRange     '0.12.1',
+30 silly addNameRange     '0.12.2',
+30 silly addNameRange     '0.12.3',
+30 silly addNameRange     '0.12.4',
+30 silly addNameRange     '0.12.5',
+30 silly addNameRange     '0.12.6',
+30 silly addNameRange     '0.12.6-beta-43e6e28',
+30 silly addNameRange     '0.12.7',
+30 silly addNameRange     '0.12.8',
+30 silly addNameRange     '0.12.9',
+30 silly addNameRange     '0.12.10',
+30 silly addNameRange     '0.12.11',
+30 silly addNameRange     '0.12.12',
+30 silly addNameRange     '0.12.11-beta-3029418',
+30 silly addNameRange     '0.12.13',
+30 silly addNameRange     '0.12.14',
+30 silly addNameRange     '0.12.15',
+30 silly addNameRange     '0.12.16',
+30 silly addNameRange     '0.12.16-beta-905422d',
+30 silly addNameRange     '0.12.17',
+30 silly addNameRange     '0.12.18',
+30 silly addNameRange     '0.12.19',
+30 silly addNameRange     '0.12.20',
+30 silly addNameRange     '0.12.21',
+30 silly addNameRange     '0.12.22',
+30 silly addNameRange     '0.12.23',
+30 silly addNameRange     '0.12.24',
+30 silly addNameRange     '0.12.24-beta-6cf7955',
+30 silly addNameRange     '0.12.25',
+30 silly addNameRange     '0.12.25-beta-37a7958',
+30 silly addNameRange     '0.12.25-beta-ad5bc24',
+30 silly addNameRange     '0.12.26',
+30 silly addNameRange     '0.12.27',
+30 silly addNameRange     '0.12.28',
+30 silly addNameRange     '0.12.28-beta-b9be580',
+30 silly addNameRange     '0.12.29',
+30 silly addNameRange     '0.12.30',
+30 silly addNameRange     '0.12.31',
+30 silly addNameRange     '0.12.28-beta-f65c864',
+30 silly addNameRange     '0.12.24-dev-test',
+30 silly addNameRange     '0.12.24-dev-socketio10',
+30 silly addNameRange     '0.12.24-dev-socketio10-2',
+30 silly addNameRange     '0.12.32-beta.0',
+30 silly addNameRange     '0.12.32' ] ]
+31 verbose addNamed [ 'karma', '0.12.31' ]
+32 verbose addNamed [ '0.12.31', '0.12.31' ]
+33 silly lockFile feea9de1-karma-0-12-31 karma@0.12.31
+34 verbose lock karma@0.12.31 /home/adexe/.npm/feea9de1-karma-0-12-31.lock
+35 silly lockFile feea9de1-karma-0-12-31 karma@0.12.31
+36 silly lockFile feea9de1-karma-0-12-31 karma@0.12.31
+37 silly lockFile cd7961bb-karma karma@
+38 silly lockFile cd7961bb-karma karma@
+39 silly resolved [ { name: 'karma',
+39 silly resolved     description: 'Spectacular Test Runner for JavaScript.',
+39 silly resolved     homepage: 'http://karma-runner.github.io/',
+39 silly resolved     repository: { type: 'git', url: 'git://github.com/karma-runner/karma.git' },
+39 silly resolved     bugs: { url: 'https://github.com/karma-runner/karma/issues' },
+39 silly resolved     keywords:
+39 silly resolved      [ 'karma',
+39 silly resolved        'spectacular',
+39 silly resolved        'runner',
+39 silly resolved        'karma',
+39 silly resolved        'js',
+39 silly resolved        'javascript',
+39 silly resolved        'testing',
+39 silly resolved        'test',
+39 silly resolved        'remote',
+39 silly resolved        'execution' ],
+39 silly resolved     author: { name: 'Vojta Jína', email: 'vojta.jina@gmail.com' },
+39 silly resolved     contributors:
+39 silly resolved      [ [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object] ],
+39 silly resolved     dependencies:
+39 silly resolved      { di: '~0.0.1',
+39 silly resolved        'socket.io': '0.9.16',
+39 silly resolved        chokidar: '>=0.8.2',
+39 silly resolved        glob: '~3.2.7',
+39 silly resolved        minimatch: '~0.2',
+39 silly resolved        'http-proxy': '~0.10',
+39 silly resolved        optimist: '~0.6.0',
+39 silly resolved        rimraf: '~2.2.5',
+39 silly resolved        q: '~0.9.7',
+39 silly resolved        colors: '~0.6.2',
+39 silly resolved        lodash: '~2.4.1',
+39 silly resolved        mime: '~1.2.11',
+39 silly resolved        log4js: '~0.6.3',
+39 silly resolved        useragent: '~2.0.4',
+39 silly resolved        'graceful-fs': '~2.0.1',
+39 silly resolved        connect: '~2.26.0',
+39 silly resolved        'source-map': '~0.1.31' },
+39 silly resolved     devDependencies:
+39 silly resolved      { grunt: '~0.4',
+39 silly resolved        'grunt-simple-mocha': '*',
+39 silly resolved        'grunt-contrib-jshint': '~0.10.0',
+39 silly resolved        'grunt-contrib-watch': '~0.6.1',
+39 silly resolved        'grunt-coffeelint': '~0.0.6',
+39 silly resolved        'grunt-npm': '~0.0.1',
+39 silly resolved        'grunt-bump': '~0.0.10',
+39 silly resolved        'grunt-conventional-changelog': '~1.1.0',
+39 silly resolved        'grunt-auto-release': '~0.0.3',
+39 silly resolved        'grunt-browserify': '~2.1.3',
+39 silly resolved        'load-grunt-tasks': '~0.6.0',
+39 silly resolved        mocks: '~0.0.10',
+39 silly resolved        which: '~1.0',
+39 silly resolved        mocha: '~1.20.1',
+39 silly resolved        chai: '~1.9.1',
+39 silly resolved        'chai-as-promised': '~4.1.0',
+39 silly resolved        sinon: '~1.10.3',
+39 silly resolved        'sinon-chai': '~2.5.0',
+39 silly resolved        'timer-shim': '~0.3.0',
+39 silly resolved        'karma-jasmine': '~0.1.0',
+39 silly resolved        'karma-mocha': '*',
+39 silly resolved        'karma-qunit': '*',
+39 silly resolved        'karma-coverage': '*',
+39 silly resolved        'karma-requirejs': '*',
+39 silly resolved        'karma-commonjs': '*',
+39 silly resolved        'karma-growl-reporter': '*',
+39 silly resolved        'karma-junit-reporter': '*',
+39 silly resolved        'karma-chrome-launcher': '*',
+39 silly resolved        'karma-firefox-launcher': '*',
+39 silly resolved        'karma-sauce-launcher': '*',
+39 silly resolved        'karma-phantomjs-launcher': '*',
+39 silly resolved        'karma-ng-scenario': '*',
+39 silly resolved        'karma-coffee-preprocessor': '*',
+39 silly resolved        'karma-live-preprocessor': '*',
+39 silly resolved        'karma-html2js-preprocessor': '*',
+39 silly resolved        'karma-browserstack-launcher': '*',
+39 silly resolved        LiveScript: '~1.2.0',
+39 silly resolved        'coffee-errors': '~0.8.6',
+39 silly resolved        'coffee-script': '~1.7.1',
+39 silly resolved        'grunt-jscs-checker': '~0.6.1' },
+39 silly resolved     main: './lib/index',
+39 silly resolved     bin: {},
+39 silly resolved     engines: { node: '~0.8 || ~0.10' },
+39 silly resolved     version: '0.12.31',
+39 silly resolved     license: 'MIT',
+39 silly resolved     gitHead: '6d2e4a7751a04284ce0836eba72cbe844933be9e',
+39 silly resolved     _id: 'karma@0.12.31',
+39 silly resolved     scripts: {},
+39 silly resolved     _shasum: '806aa7c2acb13a39edb9374a7a477e643a5e94c9',
+39 silly resolved     _from: 'karma@',
+39 silly resolved     _npmVersion: '2.1.17',
+39 silly resolved     _nodeVersion: '0.10.35',
+39 silly resolved     _npmUser: { name: 'karmarunnerbot', email: 'karmarunnerbot@gmail.com' },
+39 silly resolved     maintainers: [ [Object], [Object] ],
+39 silly resolved     dist:
+39 silly resolved      { shasum: '806aa7c2acb13a39edb9374a7a477e643a5e94c9',
+39 silly resolved        tarball: 'http://registry.npmjs.org/karma/-/karma-0.12.31.tgz' },
+39 silly resolved     directories: {},
+39 silly resolved     _resolved: 'https://registry.npmjs.org/karma/-/karma-0.12.31.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install karma@0.12.31 into /usr/lib
+41 info installOne karma@0.12.31
+42 verbose lib/node_modules/karma unbuild
+43 verbose tar unpack /home/adexe/.npm/karma/0.12.31/package.tgz
+44 silly lockFile 4af54543-tar-usr-lib-node-modules-karma tar:///usr/lib/node_modules/karma
+45 verbose lock tar:///usr/lib/node_modules/karma /home/adexe/.npm/4af54543-tar-usr-lib-node-modules-karma.lock
+46 silly lockFile 1d115285-xe-npm-karma-0-12-31-package-tgz tar:///home/adexe/.npm/karma/0.12.31/package.tgz
+47 verbose lock tar:///home/adexe/.npm/karma/0.12.31/package.tgz /home/adexe/.npm/1d115285-xe-npm-karma-0-12-31-package-tgz.lock
+48 silly gunzTarPerm modes [ '775', '664' ]
+49 error Error: EACCES, mkdir '/usr/lib/node_modules/karma'
+49 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/karma']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/usr/lib/node_modules/karma',
+49 error   fstream_type: 'Directory',
+49 error   fstream_path: '/usr/lib/node_modules/karma',
+49 error   fstream_class: 'DirWriter',
+49 error   fstream_stack:
+49 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+49 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      'Object.oncomplete (fs.js:107:15)' ] }
+50 error Please try running this command again as root/Administrator.
+51 error System Linux 3.13.0-43-generic
+52 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "karma"
+53 error cwd /home/adexe/Escritorio/Procesadores de Lenguajes/Pagina Web/ConvTemp
+54 error node -v v0.10.33
+55 error npm -v 1.4.28
+56 error path /usr/lib/node_modules/karma
+57 error fstream_path /usr/lib/node_modules/karma
+58 error fstream_type Directory
+59 error fstream_class DirWriter
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, mkdir '/usr/lib/node_modules/karma'
+63 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack Object.oncomplete (fs.js:107:15)
+64 verbose exit [ 3, true ]
