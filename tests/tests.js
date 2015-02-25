@@ -1,6 +1,14 @@
 var assert = chai.assert;
 
 suite('Temperatura', function() {
+    setup(function(){
+      if (typeof __html__ !== 'undefined') {
+          document.body.innerHTML = __html__['tests/index.html'];
+          original = document.getElementById('original');
+          converted = document.getElementById('converted');
+      }
+    });
+
     test('32F = 0C', function() {
         original.value = "32F";
         calculate();
