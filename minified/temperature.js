@@ -1,0 +1,1 @@
+"use strict";function calculate(){var e,t=document.getElementById("original"),i=t.value,n=/^\s*([-+]?[0-9]+(?:\.\d+)?(?:e[-+]?\d+)?)\s*([cf])\s*$/i,c=i.match(n);if(c){var r=c[1],a=c[2];r=parseFloat(r),"c"==a||"C"==a?(e=9*r/5+32,e=e.toFixed(1)+"F"):(e=5*(r-32)/9,e=e.toFixed(1)+"C"),converted.innerHTML=e}else converted.innerHTML="Try something like '-4.2C'"}

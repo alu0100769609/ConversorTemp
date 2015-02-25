@@ -1,0 +1,8 @@
+td,th{vertical-align:top;text-align:right;font-size:large}
+#title-temp{text-align:center;margin-top:50}
+#converted{color:red;font-weight:700;font-size:large}
+#link-test{text-align:center;margin-top:250}
+#return-plpage{text-align:center}
+table{margin:250 auto auto;border-color:#000}
+input{text-align:center;border:none;font-size:large;background-color:#fff;border-color:#000}
+body{background-color:#b0c4de;font-size:large;background-image:url(../images/bg_temperature.jpg)}
