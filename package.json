@@ -25,7 +25,7 @@
     "mocha": "latest"
   },
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
+    "test": "./node_modules/karma/bin/karma start my.conf.js --single-run --browsers PhantomJS"
   },
   "repository": {
     "type": "git",
